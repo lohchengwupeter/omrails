@@ -11,6 +11,8 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
+gem 'rails_12factor', group: :production
+
 gem 'sass-rails', '~> 4.0.3'
 
 gem 'uglifier', '>= 1.3.0'
