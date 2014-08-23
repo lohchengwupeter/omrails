@@ -4,7 +4,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.5'
 
-gem 'pg'
+group :production do
+	gem 'pg'
+end
+
+group :development, :test do
+	gem 'sqlite3'
+end
 
 ruby '2.1.2'
 
